@@ -9,12 +9,12 @@ public class Main {
         int a, b, c, d, e, f, g;
 
         // Running GCD
-        a = 3;
+        a = 0;
         b = 25;
 
-        System.out.printf("GCD of %d and %d: %d\n", a, b, Maths.gcd(a, b));
+        System.out.printf("GCD of %d and %d: %d\n", a, b, MathOps.gcd(a, b));
 
         // Running LCM
-        System.out.println(Maths.lcm(a, b));
+        System.out.printf("LCM of %d and %d: %d\n", a, b, MathOps.lcm(a, b));
     }
 }

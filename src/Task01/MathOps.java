@@ -1,9 +1,9 @@
 package Task01;
 
 
-public class Maths{
+public class MathOps {
 
-    public Maths(){
+    public MathOps(){
     }
 
     /**
@@ -13,15 +13,18 @@ public class Maths{
      * @return the GCD of the specified numbers
      */
     public static int gcd(int a, int b){
-        //if(a == 0 || a == b)
+        if(a == 0)
+            return b;
+
+        if(b == 0 || b == a)
+            return a;
+
          while(a != b){
              if(a < b)
                  b -= a;
 
              else if(b < a)
                  a -= b;
-
-             else break;
          }
 
         return a;
@@ -34,6 +37,6 @@ public class Maths{
      * @return the LCM of the specified numbers
      */
     public static int lcm(int a, int b){
-        return (a * b) / gcd(a, b);
+        return Math.abs(a * b) / gcd(a, b);
     }
 }
