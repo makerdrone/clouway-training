@@ -1,5 +1,5 @@
 
-package task_objects;
+package com.clouway.task_objects;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;

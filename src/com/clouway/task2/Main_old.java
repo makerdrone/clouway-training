@@ -1,10 +1,12 @@
-package task_objects;
+package com.clouway.task2;
+
+import com.clouway.task_objects.*;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
 
 
-public class Main {
+public class Main_old {
 
 	/**
 	 * @param args
@@ -24,7 +26,7 @@ public class Main {
      * Test the StringSumator class
      */
 	public static void testSumator() {
-		Sumator smtr = new Sumator();
+		com.clouway.task_objects.Sumator smtr = new com.clouway.task_objects.Sumator();
 		System.out.printf("Sum strings(concatenate): %s\n", smtr.sum("One", " and two."));
 		System.out.printf("Sum integers: %s\n", smtr.sum(23, 2));
 		System.out.printf("Sum doubles: %s\n", smtr.sum(23.5, 2.52));

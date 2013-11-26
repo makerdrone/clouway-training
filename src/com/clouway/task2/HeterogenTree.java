@@ -8,17 +8,6 @@ public class HeterogenTree {
     protected TreeNode currentElement = null;
 
     /**
-     * Swap two elements of the tree.
-     * @param a
-     * @param b
-     */
-    protected void swapElements(TreeNode a, TreeNode b){
-        Object tempData = a.getData();
-        a.setData(b.getData());
-        b.setData(tempData);
-    }
-
-    /**
      * Default constructor. Adds a root element with no data.
      */
     public HeterogenTree(){
@@ -35,6 +24,17 @@ public class HeterogenTree {
         TreeNode root = new TreeNode(null, data);
         this.elements.add(root);
         this.currentElement = root;
+    }
+
+    /**
+     * Swap two elements of the tree.
+     * @param a
+     * @param b
+     */
+    protected void swapElements(TreeNode a, TreeNode b){
+        Object tempData = a.getData();
+        a.setData(b.getData());
+        b.setData(tempData);
     }
 
     /**

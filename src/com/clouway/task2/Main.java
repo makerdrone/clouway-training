@@ -14,6 +14,9 @@ public class Main {
 
         System.out.println("Runing Sumator.");
         runSumator();
+
+        System.out.println("\nRuning heterogen tree.");
+        runHeterogenTree();
     }
 
     public static void runSumator(){
@@ -43,7 +46,14 @@ public class Main {
         System.out.printf("Sum of Strings '%s' and '%s': '%s'\n", strA, strB, sumator.sum(strA, strB));
     }
 
-    public static void runHomogenTree(){
+    public static void runHeterogenTree(){
+        HeterogenTree tree = new HeterogenTree("root");
+        tree.add(new Integer(2));
+        tree.add(new Integer(3));
+        tree.add(new Double(3.5));
+        tree.add(new Integer(5));
 
+        tree.printElements();
+        System.out.printf("\nhas element 3.5: %s\n", tree.hasElement(new Double(3.5)));
     }
 }
