@@ -1,4 +1,4 @@
-package task_exceptions;
+package com.clouway.task_exceptions;
 
 
 import java.util.Scanner;

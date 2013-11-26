@@ -10,7 +10,7 @@ public class Main {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-        System.out.println("Testing 'Sumator':");
+        System.out.println("Testing 'StringSumator':");
 		testSumator();
 
         System.out.println("\nTesting homogeneous tree:");
@@ -21,7 +21,7 @@ public class Main {
 	}
 
     /**
-     * Test the Sumator class
+     * Test the StringSumator class
      */
 	public static void testSumator() {
 		Sumator smtr = new Sumator();

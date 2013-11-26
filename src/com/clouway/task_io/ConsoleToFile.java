@@ -1,10 +1,10 @@
-package task_io;
+package com.clouway.task_io;
 
 import java.io.*;
 
 
 public class ConsoleToFile {
-    private ConsoleReader reader = new ConsoleReader();
+    private ConsoleReader_old reader = new ConsoleReader_old();
     private String filePath;
     
     public ConsoleToFile(){

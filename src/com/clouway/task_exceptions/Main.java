@@ -1,4 +1,4 @@
-package task_exceptions;
+package com.clouway.task_exceptions;
 
 
 public class Main {
@@ -18,7 +18,7 @@ public class Main {
      * Method to test the string sumator
      */
     public static void testSumator(){
-        Sumator smtr = new Sumator();
+        StringSumator smtr = new StringSumator();
         
         // Print a correct sum
         System.out.println(smtr.sumStr("300", "28"));

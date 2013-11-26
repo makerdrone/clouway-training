@@ -1,8 +1,8 @@
-package task_io;
+package com.clouway.task_io;
 
 import java.util.Scanner;
 
-public class ConsoleReader {
+public class ConsoleReader_old {
     private Scanner scan = new Scanner(System.in);
     private String strData;
     private int intData;
@@ -13,7 +13,7 @@ public class ConsoleReader {
     /**
      * Default constructor
      */
-    public ConsoleReader(){}
+    public ConsoleReader_old(){}
 
     /**
      * Read a string from the console

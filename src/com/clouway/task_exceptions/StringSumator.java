@@ -1,11 +1,11 @@
-package task_exceptions;
+package com.clouway.task_exceptions;
 
 
-public class Sumator {
+public class StringSumator {
     /**
      * Default constructor
      */
-    public Sumator(){}
+    public StringSumator(){}
 
     /**
      * Sums two numbers represented as strings and prints the result.
