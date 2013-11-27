@@ -17,6 +17,9 @@ public class Main {
 
         System.out.println("\nRuning heterogen tree.");
         runHeterogenTree();
+
+        System.out.println("\nRuning homogeneous tree.");
+        runHomogeneousTree();
     }
 
     public static void runSumator(){
@@ -50,10 +53,34 @@ public class Main {
         HeterogenTree tree = new HeterogenTree("root");
         tree.add(new Integer(2));
         tree.add(new Integer(3));
+        tree.add("a branch");
         tree.add(new Double(3.5));
         tree.add(new Integer(5));
 
         tree.printElements();
         System.out.printf("\nhas element 3.5: %s\n", tree.hasElement(new Double(3.5)));
+    }
+
+    public static void runHomogeneousTree(){
+        HomogenTree tree = new HomogenTree(0);
+        tree.add(10);
+        tree.add(4);
+        tree.add(3);
+        tree.add(7);
+        tree.add(2);
+        tree.add(2);
+        tree.add(8);
+        tree.add(9);
+
+        tree.printElements();
+        int searchElement = 7;
+        System.out.printf("\nHas element %s: %s", searchElement, tree.hasElement(searchElement));
+
+        tree.seekRoot();
+        tree.seekChildren(0, 1, 1);
+        int data = tree.getData();
+
+        System.out.printf("\nCurrent element: %s", data);
+        System.out.println();
     }
 }

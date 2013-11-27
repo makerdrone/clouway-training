@@ -39,7 +39,7 @@ public class HeterogenTree {
 
     /**
      * Add a new element with a unique data object
-     * @param data  the data object
+     * @param data the data object
      * @return
      */
     public boolean add(Object data){

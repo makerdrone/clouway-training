@@ -4,6 +4,21 @@ package com.clouway.task2;
 public class HomogenTree extends HeterogenTree {
 
     /**
+     * Default constructor. Sets root data to 0
+     */
+    public HomogenTree(){
+        super(new Integer(0));
+    }
+
+    /**
+     * Constructor setting the root data
+     * @param data  an integer
+     */
+    public HomogenTree(int data){
+        super(new Integer(data));
+    }
+
+    /**
      * Move an element up the tree so that it is 'smaller' than its parent
      * and 'greater' than its children
      * @param elem
@@ -11,10 +26,10 @@ public class HomogenTree extends HeterogenTree {
     private void heapUp(TreeNode elem){
         TreeNode parent = elem.getParent();
         TreeNode current = elem;
-        
+
         while(parent != null && getElementData(current) > getElementData(parent)){
             swapElements(current, parent);
-            
+
             current = parent;
             parent = current.getParent();
         }
@@ -29,25 +44,10 @@ public class HomogenTree extends HeterogenTree {
         if(elem == null){
             return 0;
         }
-        
+
         Integer data =(Integer) elem.getData();
-        
+
         return data.intValue();
-    }
-
-    /**
-     * Default constructor. Sets root data to 0
-     */
-    public HomogenTree(){
-        super(new Integer(0));
-    }
-
-    /**
-     * Constructor setting the root data
-     * @param data  an integer
-     */
-    public HomogenTree(int data){
-        super(new Integer(data));
     }
 
     /**

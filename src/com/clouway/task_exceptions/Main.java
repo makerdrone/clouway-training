@@ -1,11 +1,14 @@
 package com.clouway.task_exceptions;
 
+/**
+ * Stefan.Dimitrov
+ */
 
 public class Main {
     
     public static void main(String[] argv){
         System.out.println("\nTesting string sum.");
-        testSumator();
+        testStringSumator();
 
         System.out.println("\nTesting console reading.");
         testConsole();
@@ -17,14 +20,14 @@ public class Main {
     /**
      * Method to test the string sumator
      */
-    public static void testSumator(){
-        StringSumator smtr = new StringSumator();
+    public static void testStringSumator(){
+        StringSumator sumator = new StringSumator();
         
         // Print a correct sum
-        System.out.println(smtr.sumStr("300", "28"));
+        System.out.println(sumator.sumStr("300", "28"));
         
         // Print result of an incorrect operation
-        System.out.println(smtr.sumStr("345yrsxn", "5"));
+        System.out.println(sumator.sumStr("345yrsxn", "5"));
     }
 
     /**
